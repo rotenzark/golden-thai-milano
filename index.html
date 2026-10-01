@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte c'è l'ampolla chiusa e la ciotola vuota; se il codice non arriva, dopo 2,5 s la ciotola piena */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaOlio=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,56 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&amp;family=Thasadith:wght@700&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"Golden Thai Milano","description":"Massaggi thailandesi e occidentali in Via Nirone 2A a Milano, a due passi da Corso Magenta e da Cadorna: tradizionale thailandese senza olio, con olio di mandorle, caldo, con le essenze aromatiche; plantare, in gravidanza, drenante. Tutti i giorni dalle 11 alle 21.","url":"https://rotenzark.github.io/golden-thai-milano/","image":"https://rotenzark.github.io/golden-thai-milano/img/og.jpg","telephone":"+39 351 614 5847","email":"goldenthaimilano@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Via Nirone 2A","postalCode":"20123","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.4651947,"longitude":9.1779875},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"256","bestRating":"5"},"sameAs":["https://www.facebook.com/GoldenThaiMilano","https://www.instagram.com/goldenthaimilano/","https://massaggigoldenthaimilano.mytreatwell.it/"]}
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Golden Thai Milano",
+  "description": "Massaggi thailandesi e occidentali in Via Nirone 2A a Milano, a due passi da Corso Magenta e da Cadorna: tradizionale thailandese senza olio, con olio di mandorle, caldo, con le essenze aromatiche; plantare, in gravidanza, drenante. Tutti i giorni dalle 11 alle 21.",
+  "url": "https://rotenzark.github.io/golden-thai-milano/",
+  "image": "https://rotenzark.github.io/golden-thai-milano/img/og.jpg",
+  "telephone": "+39 351 614 5847",
+  "email": "goldenthaimilano@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Nirone 2A",
+    "postalCode": "20123",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4651947,
+    "longitude": 9.1779875
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "11:00",
+      "closes": "21:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/GoldenThaiMilano",
+    "https://www.instagram.com/goldenthaimilano/",
+    "https://massaggigoldenthaimilano.mytreatwell.it/"
+  ]
+}
 </script>
 </head>
 <body>
@@ -82,7 +124,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
         <p class="voto"><b class="voto__n">4,7</b> <span class="voto__su" data-i18n="h.google">su Google, 256 recensioni</span></p>
         <blockquote class="citazione">
           <p class="citazione__stelle" aria-hidden="true">★★★★★★</p>
-          <p class="citazione__testo">«Dovrebbero dare la possibilità di dare sei stelle per questo centro massaggi!»</p>
+          <p lang="it" class="citazione__testo">«Dovrebbero dare la possibilità di dare sei stelle per questo centro massaggi!»</p>
           <footer data-i18n="h.chi">Claudia, in una recensione su Treatwell</footer>
         </blockquote>
       </div>
@@ -226,12 +268,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Chi torna, e chi ci viene la prima volta</h2>
     <p class="voto voto--sezione"><b class="voto__n">4,7</b> <span class="voto__su" data-i18n="d.google">su Google, 256 recensioni</span></p>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__testo">«MASSAGGIO STUPENDO! ho provato diversi massaggi Thai tradizionali. Personale serio ,professionale e qualificato.Vi confermo che questo è il miglior massaggio ricevuto. La location è accogliente e sono molto puntuali e seri. Esperienza fatta su 90 Min di massaggio.Da ripetere sicuramente!»</p><p class="recensione__chi"><b>Elias Ramirez</b> <span data-i18n="d.g3m">Google, 3 mesi fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Il personale è di una gentilezza unica. Sono disponibili, educati e rispettosi del cliente. La pulizia e l’igiene si vede dal momento in cui entri nel centro, perché tutto risplende e profuma. C’è un ambiente calmo, rilassante e confortevole. […]»</p><p class="recensione__chi"><b>Francesca Pinna</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Vado spessissimo, super professionali, pulizia 10+! Massaggi di diverso tipo, io amo il thailandese con una mano un po' più forte! Rimettono a nuovo la Mia schiena ogni volta!»</p><p class="recensione__chi"><b>Marco Morelli</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«[…] Ho provato un massaggio tradizionale thailandese senza olio ed è stata un’esperienza davvero magnifica. Bella è stata bravissima, molto professionale e attenta, riuscendo a sciogliere ogni tensione con grande abilità. Il centro è pulito, accogliente e rilassante, e fin dall’ingresso mi sono sentita a mio agio grazie all’accoglienza di un ragazzo gentilissimo. […]»</p><p class="recensione__chi"><b>Sabrina T</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Ho ricevuto come regalo un massaggio al centro golden thai .. FAVOLOSO!!! Un’ora di massaggio a dir poco stupendo .. ragazza bravissima .. effettuato il classico massaggio senza olio per vivere la vera esperienza del massaggio tailandese .. finito il massaggio mi sento rinata .. il posto è pulitissimo e accogliente .. […]»</p><p class="recensione__chi"><b>Francesca Secci</b> <span data-i18n="d.g1m">Google, un mese fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«[…] Una menzione particolare a Guido che accoglie tutti i clienti con il sorriso, garbo e gentilezza, cosa non scontata a Milano e che anche saputo consigliarmi il massaggio più appropriato, non essendo io un’abituee…»</p><p class="recensione__chi"><b>Silvia Orsi</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«MASSAGGIO STUPENDO! ho provato diversi massaggi Thai tradizionali. Personale serio ,professionale e qualificato.Vi confermo che questo è il miglior massaggio ricevuto. La location è accogliente e sono molto puntuali e seri. Esperienza fatta su 90 Min di massaggio.Da ripetere sicuramente!»</p><p class="recensione__chi"><b>Elias Ramirez</b> <span data-i18n="d.g3m">Google, 3 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Il personale è di una gentilezza unica. Sono disponibili, educati e rispettosi del cliente. La pulizia e l’igiene si vede dal momento in cui entri nel centro, perché tutto risplende e profuma. C’è un ambiente calmo, rilassante e confortevole. […]»</p><p class="recensione__chi"><b>Francesca Pinna</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Vado spessissimo, super professionali, pulizia 10+! Massaggi di diverso tipo, io amo il thailandese con una mano un po' più forte! Rimettono a nuovo la Mia schiena ogni volta!»</p><p class="recensione__chi"><b>Marco Morelli</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«[…] Ho provato un massaggio tradizionale thailandese senza olio ed è stata un’esperienza davvero magnifica. Bella è stata bravissima, molto professionale e attenta, riuscendo a sciogliere ogni tensione con grande abilità. Il centro è pulito, accogliente e rilassante, e fin dall’ingresso mi sono sentita a mio agio grazie all’accoglienza di un ragazzo gentilissimo. […]»</p><p class="recensione__chi"><b>Sabrina T</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Ho ricevuto come regalo un massaggio al centro golden thai .. FAVOLOSO!!! Un’ora di massaggio a dir poco stupendo .. ragazza bravissima .. effettuato il classico massaggio senza olio per vivere la vera esperienza del massaggio tailandese .. finito il massaggio mi sento rinata .. il posto è pulitissimo e accogliente .. […]»</p><p class="recensione__chi"><b>Francesca Secci</b> <span data-i18n="d.g1m">Google, un mese fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«[…] Una menzione particolare a Guido che accoglie tutti i clienti con il sorriso, garbo e gentilezza, cosa non scontata a Milano e che anche saputo consigliarmi il massaggio più appropriato, non essendo io un’abituee…»</p><p class="recensione__chi"><b>Silvia Orsi</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte; la frase delle sei stelle, in alto, da una recensione su Treatwell.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=Golden+Thai+Milano%2C+Via+Nirone+2A%2C+20123+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
     <div class="fregio fregio--sotto" aria-hidden="true"></div>
@@ -274,7 +316,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
         <p class="dove__azioni"><a class="bottone bottone--pieno" href="https://www.google.com/maps/dir/?api=1&amp;destination=Golden+Thai+Milano%2C+Via+Nirone+2A%2C+20123+Milano" target="_blank" rel="noopener" data-i18n="t.indicazioni">Indicazioni</a> <a class="bottone bottone--vuoto" href="https://massaggigoldenthaimilano.mytreatwell.it/" target="_blank" rel="noopener" data-i18n="t.prenota2">Prenota online</a></p>
       </div>
       <div class="cartina reveal">
-        <iframe title="Mappa: Golden Thai Milano, Via Nirone 2A, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Golden%20Thai%20Milano%2C%20Via%20Nirone%202A%2C%2020123%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Golden Thai Milano, Via Nirone 2A, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Golden%20Thai%20Milano%2C%20Via%20Nirone%202A%2C%2020123%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Golden+Thai+Milano%2C+Via+Nirone+2A%2C+20123+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
     </div>
   </section>
@@ -287,7 +329,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__dove">Via Nirone 2A, 20123 Milano · <a href="tel:+393516145847" class="intero">351 614 5847</a> · <a href="mailto:goldenthaimilano@gmail.com">goldenthaimilano@gmail.com</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Tutti i giorni, dalle 11 alle 21</p>
     <p class="piede__social"><a href="https://www.facebook.com/GoldenThaiMilano" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/goldenthaimilano/" target="_blank" rel="noopener">Instagram</a> · <a href="https://massaggigoldenthaimilano.mytreatwell.it/" target="_blank" rel="noopener">Treatwell</a></p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · orari, voto e recensioni dalla loro scheda Google (settembre 2026); il listino dalla loro pagina Treatwell; le foto dalla loro scheda Google e da Treatwell; le loro parole dal loro sito e da Facebook. L'ampolla l'abbiamo disegnata noi.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · orari, voto e recensioni dalla loro scheda Google (settembre 2026); il listino dalla loro pagina Treatwell; le foto dalla loro scheda Google e da Treatwell; le loro parole dal loro sito e da Facebook. L'ampolla l'abbiamo disegnata noi.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -302,5 +344,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
